@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encrypt & Decrypt Files</title>
+  <link rel="stylesheet" href="encrpt.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="img/encrpt-file.png">
+</head>
+<body>
+  <div class="main-wrapper">
+    
+    
+    <div class="details">
+      <h2><i class="fas fa-circle-info"></i> General Instructions</h2>
+      <ul>
+        <li>Select a file using the "Choose File" button.</li>
+        <li>Enter a secure password to encrypt or decrypt.</li>
+        <li>Click "Encrypt & Download" to save an encrypted file.</li>
+        <li>Use "Decrypt & Open" to restore an encrypted file.</li>
+        <li>Keep your password safe! It's required for decryption.</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1><i class="fas fa-lock" style="color: black; margin-right: 8px;"></i>  Encryption|Decryption</h1>
+
+      <div>
+        <input type="file" id="fileInput" />
+        <br />
+        <input type="password" id="password" placeholder="Enter password" />
+        <br />
+        <button onclick="encryptFile()">Encrypt & Download</button>
+      </div>
+
+      <div class="section">
+        <input type="file" id="decryptInput" />
+        <br />
+        <input type="password" id="decryptPassword" placeholder="Enter password to decrypt" />
+        <br />
+        <button onclick="decryptFile()">Decrypt & Open</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="encrpt.js"></script>
+</body>
+</html>
